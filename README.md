@@ -7,13 +7,13 @@
     docker-compose build
 4. Edit config/database.yml. Add host, user and password to default. Example:
 
-   default: &default
-      adapter: postgresql
-      encoding: unicode
-      pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-      host: db
-      username: postgres
-      password: password
+        default: &default
+            adapter: postgresql
+            encoding: unicode
+            pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+            host: db
+            username: postgres
+            password: password
 
 5. Run:
     docker-compose up
