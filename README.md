@@ -1,4 +1,4 @@
-####Tested on Linux Mint 20.1 Cinamon
+#### Tested on Linux Mint 20.1 Cinamon
 1. Rename this folder for project
 2. Edit app name in Dockerfile and docker-compose.yml (webgram_dc in example)
 3. Run:
