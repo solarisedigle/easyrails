@@ -2,9 +2,10 @@
 1. Rename this folder for project
 2. Edit app name in Dockerfile and docker-compose.yml (webgram_dc in example)
 3. Run:
-    docker-compose run web rails new . -T --force --database=postgresql
-    sudo chown -R $USER:$USER .
-    docker-compose build
+
+       docker-compose run web rails new . -T --force --database=postgresql
+       sudo chown -R $USER:$USER .
+       docker-compose build
 4. Edit config/database.yml. Add host, user and password to default. Example:
 
         default: &default
@@ -16,9 +17,11 @@
             password: password
 
 5. Run:
-    docker-compose up
+
+       docker-compose up
 6. Run in ANOTHER terminal:
-    docker-compose run web rake db:create
+
+       docker-compose run web rake db:create
 7. Go to http://localhost:3000 or smth
 
 ##### additional
